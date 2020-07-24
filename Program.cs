@@ -6,6 +6,7 @@ namespace PingPong{
       
       Console.WriteLine(PingAndOrPong.isDivisibleByThreeOrFive(5));
       Console.WriteLine(PingAndOrPong.isDivisibleByThreeOrFive(15));
+      Console.WriteLine(PingAndOrPong.isDivisibleByThreeOrFive(6));
     }
 
   }
