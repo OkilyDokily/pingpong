@@ -1,12 +1,15 @@
 using System;
 using PingPong.Models;
+using System.Collections.Generic;
 namespace PingPong{
   public class Program{
     public static void Main(){
-      
-      Console.WriteLine(PingAndOrPong.isDivisibleByThreeOrFive(5));
-      Console.WriteLine(PingAndOrPong.isDivisibleByThreeOrFive(15));
-      Console.WriteLine(PingAndOrPong.isDivisibleByThreeOrFive(6));
+    Console.WriteLine("Enter a number");
+    int number = int.Parse(Console.ReadLine());
+    List<string> results = PingAndOrPong.createListWithInputNumber(number);
+      foreach(string result in results){
+        Console.WriteLine(result);
+      }
     }
 
   }
